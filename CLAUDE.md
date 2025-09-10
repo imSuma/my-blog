@@ -18,7 +18,7 @@ This is a Next.js 15 blog application using Nextra Blog Theme with the App Route
 - **App Directory**: `app/` - Uses Next.js App Router with Nextra
   - `app/layout.tsx` - Root layout with Nextra theme CSS imports
   - `app/page.mdx` - Homepage in MDX format
-  - `app/posts/` - Blog posts directory (MDX files)
+  - `app/posts/[slug]/page.mdx` - Blog posts using Next.js dynamic routing
   - `app/globals.css` - Global styles (retained from original setup)
 - **Configuration Files**:
   - `next.config.ts` - Next.js config with Nextra integration
@@ -36,10 +36,10 @@ This is a Next.js 15 blog application using Nextra Blog Theme with the App Route
 - **React**: Version 19.1.0
 
 ### Content Management
-- **Blog Posts**: Create `.mdx` files in `app/posts/` directory
+- **Blog Posts**: Create directories `app/posts/[slug]/page.mdx` for each post
 - **Frontmatter**: Each post should include title, date, description, tag, and author
 - **Homepage**: Edit `app/page.mdx` for homepage content
-- **Theme Config**: Modify `theme.config.jsx` for site-wide settings like footer, navigation, and metadata
+- **URLs**: Posts are accessible at `/posts/[slug]` (e.g., `/posts/hello-world`)
 
 ### Development Notes
 - Uses Next.js App Router with Nextra 4.0 (requires App Router)
