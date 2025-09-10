@@ -1,11 +1,11 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-blog'
+import { Footer, Layout } from 'nextra-theme-blog'
 import { Head } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
+import Link from 'next/link'
 import 'nextra-theme-blog/style.css'
 
 export const metadata = {
-  title: 'My Blog',
-  description: 'A blog built with Next.js and Nextra'
+  title: 'Suma Murikipudi - Personal Blog',
+  description: 'Personal blog by Suma Murikipudi - Full Stack Developer'
 }
 
 export default async function RootLayout({
@@ -18,10 +18,15 @@ export default async function RootLayout({
       <Head />
       <body>
         <Layout>
-          <Navbar pageMap={await getPageMap()} />
+          <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '2rem' }}>
+            <nav style={{ display: 'flex', gap: '1rem' }}>
+              <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>About</Link>
+              <Link href="/posts" style={{ textDecoration: 'none', color: 'inherit' }}>Posts</Link>
+            </nav>
+          </div>
           {children}
           <Footer>
-            <p>MIT 2024 © My Blog.</p>
+            <p>© 2025 Suma Murikipudi</p>
           </Footer>
         </Layout>
       </body>

@@ -8,9 +8,12 @@ author: Developer
 
 # AskPDF Offline: Privacy-First AI Document Chat
 
+**Live Demo:** [https://askpdf-offline.vercel.app/](https://askpdf-offline.vercel.app/)  
+**Source Code:** [https://github.com/imSuma/askpdf-offline](https://github.com/imSuma/askpdf-offline)
+
 In an era where data privacy concerns are at an all-time high, I built **AskPDF Offline** - a revolutionary AI-powered PDF chat application that runs entirely in your browser without sending any data to external servers. This project demonstrates how cutting-edge AI can be made completely private and secure.
 
-## 🔒 Privacy by Design
+## Privacy by Design
 
 The core philosophy behind AskPDF Offline is **"your data never leaves your device."** Unlike traditional AI services that require uploading documents to cloud servers, this application:
 
@@ -21,7 +24,7 @@ The core philosophy behind AskPDF Offline is **"your data never leaves your devi
 
 This approach ensures complete privacy for sensitive documents like medical records, legal papers, financial statements, or confidential business documents.
 
-## 🚀 Key Features
+## Key Features
 
 ### Intelligent PDF Processing
 - **Drag-and-drop interface** for easy file uploads
@@ -41,7 +44,7 @@ This approach ensures complete privacy for sensitive documents like medical reco
 - **Real-time status indicators** for AI model loading
 - **Accessibility-focused** design with proper ARIA labels
 
-## 🛠 Technical Architecture
+## Technical Architecture
 
 ### Frontend Stack
 ```typescript
@@ -116,7 +119,7 @@ interface Message {
 - **Loading states** with animated indicators
 - **Keyboard shortcuts** for sending messages
 
-## 🔧 Technical Challenges Solved
+## Technical Challenges Solved
 
 ### 1. Browser-Based AI Inference
 Running large language models in the browser presented several challenges:
@@ -139,7 +142,7 @@ Integrating PDF content with AI responses involved:
 - **Token Limit Management**: Truncating context to fit model limits
 - **Response Quality**: Ensuring AI responses stay relevant to document content
 
-## 📊 Performance Optimizations
+## Performance Optimizations
 
 ### Model Selection
 - **Llama 3.2 3B**: Balance between capability and browser performance
@@ -161,7 +164,7 @@ export default defineConfig({
 - **Cleanup**: Proper disposal of PDF documents and AI engine resources
 - **Chunking**: Text processing in manageable chunks
 
-## 🌟 Real-World Applications
+## Real-World Applications
 
 AskPDF Offline is perfect for:
 
@@ -185,7 +188,7 @@ AskPDF Offline is perfect for:
 - **Policy Documents**: Understand company procedures
 - **Market Research**: Analyze industry reports
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 ### Advanced Features
 - **Multi-document Support**: Chat with multiple PDFs simultaneously
@@ -199,7 +202,7 @@ AskPDF Offline is perfect for:
 - **Offline Storage**: Browser-based document storage
 - **Voice Interface**: Speech-to-text and text-to-speech integration
 
-## 💡 Lessons Learned
+## Lessons Learned
 
 Building AskPDF Offline taught valuable lessons about:
 
@@ -213,7 +216,7 @@ Building AskPDF Offline taught valuable lessons about:
 - **Progressive Enhancement**: Graceful degradation for unsupported browsers
 - **User Experience**: Local processing enables responsive, offline experiences
 
-## 🎯 Getting Started
+## Getting Started
 
 To run AskPDF Offline locally:
 
@@ -235,7 +238,7 @@ npm run build
 - **WebAssembly Support**: Required for AI model execution
 - **Minimum RAM**: 4GB recommended for optimal performance
 
-## 🏆 Conclusion
+## Conclusion
 
 AskPDF Offline demonstrates that privacy and advanced AI capabilities don't have to be mutually exclusive. By leveraging modern web technologies like WebLLM, WebAssembly, and browser-native APIs, we can build powerful applications that respect user privacy while delivering exceptional functionality.
 
