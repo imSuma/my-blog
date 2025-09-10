@@ -1,4 +1,4 @@
-import { Footer, Layout, Navbar, ThemeSwitch } from 'nextra-theme-blog'
+import { Footer, Layout, Navbar } from 'nextra-theme-blog'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-blog/style.css'
@@ -14,13 +14,11 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="light">
       <Head />
       <body>
         <Layout>
-          <Navbar pageMap={await getPageMap()}>
-            <ThemeSwitch />
-          </Navbar>
+          <Navbar pageMap={await getPageMap()} />
           {children}
           <Footer>
             <p>MIT 2024 © My Blog.</p>
