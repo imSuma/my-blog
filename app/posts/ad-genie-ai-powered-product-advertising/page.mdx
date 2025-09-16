@@ -1,0 +1,227 @@
+---
+title: 'Ad Genie: AI-Powered Product Advertising with Google Gemini'
+date: 2025-09-16
+description: 'Transform your product photos into stunning advertisements using AI. Built with React, TypeScript, and powered by Google Gemini 2.5 Flash Image generation capabilities.'
+tag: 'AI, React, TypeScript'
+author: 'Suma'
+---
+
+# Ad Genie: AI-Powered Product Advertising
+
+**Live Demo:** [https://ad-genie-nine.vercel.app](https://ad-genie-nine.vercel.app)  
+**Source Code:** [https://github.com/imSuma/ad-genie](https://github.com/imSuma/ad-genie)
+
+Transform your product photos into professional advertisements with the power of AI
+
+---
+
+## Overview
+
+Ad Genie is a simple web application that leverages Google's cutting-edge Gemini 2.5 Flash Image model to automatically generate professional advertisements from your product photos. Simply upload an image, choose a theme, and watch AI create a stunning marketing visual tailored to your needs.
+
+## Key Features
+
+### AI-Powered Ad Generation
+- Utilizes **Google Gemini 2.5 Flash Image** for high-quality advertisement creation
+- Transforms product images into themed advertisements using AI
+- Supports various image formats (PNG, JPG, WEBP) up to 10MB
+
+### Multiple Theme Options
+Choose from 9 professionally designed themes:
+- **Minimalist** - Clean, elegant designs with plenty of white space
+- **Festive** - Holiday and celebration-themed advertisements
+- **Lifestyle** - Real-life scenarios showcasing product usage
+- **Luxury** - Premium, high-end aesthetic for luxury products
+- **Office** - Professional business environment styling
+- **Nature** - Organic, eco-friendly themes with natural elements
+- **Summer** - Bright, vibrant summer-inspired designs
+- **Bold** - High-impact visuals with striking colors
+- **Sale** - Promotional designs with urgency and value messaging
+
+### Intuitive User Experience
+- Drag-and-drop image upload interface
+- Real-time preview of uploaded images
+- Theme selection with visual previews
+- One-click download of generated advertisements
+- Recent ads history for easy access
+
+### Technical Excellence
+- Built with **React 19** and **TypeScript** for type-safe development
+- **Vite** for lightning-fast development and building
+- **Tailwind CSS** for responsive, modern styling
+- **React Router** for seamless navigation
+- **React Dropzone** for enhanced file upload experience
+
+## Google Gemini 2.5 Flash Image Integration
+
+Ad Genie harnesses the power of **Google's Gemini 2.5 Flash Image** model, also known internally as **Google Nano Banana** during development. This state-of-the-art multimodal AI model excels at understanding visual content and generating high-quality images based on textual descriptions and visual inputs.
+
+### Why Gemini 2.5 Flash Image?
+
+- **Multimodal Capabilities**: Processes both text and images simultaneously
+- **High-Quality Output**: Generates professional-grade advertisement images
+- **Fast Generation**: Optimized for quick response times
+- **Contextual Understanding**: Analyzes product images to create relevant ad content
+- **Theme Adaptation**: Applies different styling themes based on user selection
+
+The integration uses Google's Generative Language API to:
+1. Use the uploaded product image as a reference
+2. Generate themed prompts based on user selection
+3. Create professional advertisements that highlight the product effectively
+
+## Technology Stack
+
+### Frontend Framework
+- **React 19** - Latest React version with enhanced performance
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Next-generation frontend tooling
+
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Beautiful, customizable icons
+- **CSS Gradients** - Modern visual effects and backgrounds
+
+### Routing & State Management
+- **React Router DOM** - Client-side routing
+- **React Context** - Global state management
+- **Local Storage** - Persistent user preferences and API key storage
+
+### AI Integration
+- **Google Gemini 2.5 Flash Image** - Advanced multimodal AI model
+- **Generative Language API** - Google's AI service integration
+- **Base64 Encoding** - Secure image data transmission
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+ installed
+- Google AI Studio API key ([Get one here](https://aistudio.google.com/app/apikey))
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/imSuma/ad-genie.git
+cd ad-genie
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Configuration
+
+1. **Get Google AI Studio API Key**
+   - Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+   - Create a new API key
+   - Copy the key for use in the application
+
+2. **Configure API Key in App**
+   - Open the application
+   - Click on the Settings icon
+   - Paste your API key in the configuration modal
+   - The key is stored securely in your browser's local storage
+
+### Usage
+
+1. **Upload Product Image**
+   - Drag and drop your product photo or click to browse
+   - Supported formats: PNG, JPG, WEBP (max 10MB)
+   - Best results with high-resolution images and clear product visibility
+
+2. **Select Advertisement Theme**
+   - Choose from 9 available themes
+   - Each theme is optimized for different marketing contexts
+   - Preview theme descriptions before selection
+
+3. **Generate Advertisement**
+   - Click "Generate Ad" to start the AI process
+   - Wait for Gemini 2.5 Flash Image to create your advertisement
+   - Download the generated image for immediate use
+
+## Project Structure
+
+```
+ad-genie/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Header.tsx       # Application header
+│   │   ├── UploadScreen.tsx # Image upload interface
+│   │   ├── ThemeSelection.tsx # Theme selection screen
+│   │   ├── ResultsScreen.tsx # Generated ad display
+│   │   ├── RecentAds.tsx    # Ad history component
+│   │   └── SettingsModal.tsx # API key configuration
+│   ├── context/             # React Context providers
+│   │   ├── AppContext.ts    # Global app state
+│   │   └── AppProvider.tsx  # Context provider component
+│   ├── services/            # External service integrations
+│   │   └── aiService.ts     # Google Gemini API integration
+│   ├── utils/               # Utility functions
+│   │   ├── storage.ts       # Local storage management
+│   │   └── download.ts      # File download utilities
+│   ├── types/               # TypeScript type definitions
+│   │   └── index.ts         # Application interfaces
+│   ├── hooks/               # Custom React hooks
+│   │   └── useAppContext.ts # Context consumption hook
+│   └── App.tsx              # Main application component
+├── public/                  # Static assets
+├── package.json            # Project dependencies
+├── tailwind.config.js      # Tailwind CSS configuration
+├── vite.config.ts          # Vite build configuration
+└── tsconfig.json           # TypeScript configuration
+```
+
+## Best Practices for Optimal Results
+
+### Image Guidelines
+- **High Resolution**: Use images with at least 800px width for best results
+- **Good Lighting**: Ensure your product is well-lit and clearly visible
+- **Simple Backgrounds**: Plain or minimal backgrounds work best for AI processing
+- **Clear Focus**: Make sure your product is the main focus of the image
+- **Square/Portrait**: These orientations typically work best for social media ads
+
+### Theme Selection Tips
+- **Minimalist**: Perfect for tech products, jewelry, or clean lifestyle brands
+- **Luxury**: Ideal for high-end products, fashion, or premium services
+- **Lifestyle**: Great for everyday products shown in real-world contexts
+- **Bold**: Excellent for sports equipment, energy drinks, or dynamic products
+- **Sale**: Best for promotional campaigns and limited-time offers
+
+## Development Commands
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint code
+npm run lint
+```
+
+## Future Enhancements
+
+- **Multiple Ad Variations**: Generate multiple ads from a single image
+- **Custom Branding**: Add logos and brand colors to generated ads
+- **Batch Processing**: Upload and process multiple images simultaneously
+- **Social Media Optimization**: Pre-sized formats for different platforms
+- **Advanced Editing**: Fine-tune generated ads with built-in editor
+- **Analytics Integration**: Track ad performance and engagement
+
+## Privacy & Security
+
+- **Local Processing**: API keys are stored locally in your browser
+- **No Image Storage**: Uploaded images are processed in memory only
+- **No User Tracking**: No personal data is collected or stored
+
+---
+
+Ad Genie represents the future of automated marketing content creation, combining the power of Google's advanced AI capabilities with an intuitive user experience. Whether you're a small business owner, marketing professional, or e-commerce seller, Ad Genie helps you create professional advertisements in minutes, not hours.
+
+**Ready to transform your product photos into stunning ads?** Get started with Ad Genie today and experience the magic of AI-powered advertising!
